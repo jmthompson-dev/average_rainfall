@@ -1,0 +1,32 @@
+integer years
+integer month
+integer total_months
+real rainfall
+real total_rainfall
+real average_rainfall
+
+Put "Enter the number of years:" to output
+years = Get next input
+
+total_months    = years * 12
+total_rainfall  = 0
+
+FOR year = 1 TO years
+  FOR month = 1 TO 12
+    Put "Enter rainfall for month " + month + " (in inches):" to output
+    rainfall = Get next input
+    total_rainfall = total_rainfall + rainfall
+  END FOR
+END FOR
+
+average_rainfall = total_rainfall / total_months
+
+Put "Rainfall Summary:" to output
+Put "Total months: " to output
+Put total_months to output
+
+Put "Total rainfall: " to output
+Put total_rainfall to output
+
+Put "Average monthly rainfall: " to output
+Put average_rainfall to output
